@@ -1,5 +1,5 @@
-data process
-* extract features
-* HDBSCAN
-* OCR extract texts
-* sentence embedding
+# Data Processing
+* Extract image features: [extract_features_p.py](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Processing/extract_features_p.py) and [extracted_features_p.sbatch](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Processing/extract_features_p.sbatch) are used to extract image features through a pre-trained CNN model (ResNet50). 
+* HDBSCAN: [hds_trial_p.py](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Processing/hds_trial_p.py) and [hds_trial_p.sbatch](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Processing/hds_trial_p.sbatch) use HDBSCAN to cluster all images into groups on features extracted;
+* Extract text on images: [extract_text.py](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Processing/extract_text.py) and [extract_text.sbatch](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Processing/extract_text.sbatch) use OCR to extract text on meme images.
+* Sentence embedding: [encoding.py](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Processing/encoding.py) and [encoding,sbatch](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Processing/encoding.sbatch) use a pre-trained sentence embedding models ([reddit_single-context_mpnet-base](https://huggingface.co/flax-sentence-embeddings/reddit_single-context_mpnet-base)) to tranfrom extracted text and post titles into embedding vectors. 
