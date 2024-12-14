@@ -1,4 +1,5 @@
-data analysis
-* linear regression
-* ARIMAX
-* Granger Causality Test
+## Data Analysis
+* [popularity_trend_top15.ipynb](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Analysis/popularity_trend_top15.ipynb) shows the absolute and relative popularity trend, both weekly and monthly. 
+* linear regression: [relationship.ipynb](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Analysis/relationship.ipynb) shows the correlation analysis and the linear regression that studies the impact of overall content diversity on the decay time of meme templates. 
+* ARIMAX: [arimax.ipynb](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Analysis/arimax.ipynb) shows the impact of content diversity of each time interval on the relative popularity. 
+* Granger Causality Test: [granger.ipynb](https://github.com/MaoYingrong/Meme_template_popularity/blob/main/Data_Analysis/granger.ipynb) shows the predictive power of content diversity in previous time intervals (lag1, lag2, lag3, and lag4) on current relative popularity. 
